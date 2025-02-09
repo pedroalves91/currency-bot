@@ -9,7 +9,13 @@
 
 ```
 Bot to monitor if the price, of a set of currency pairs,
-undergoes a change of a specified threshold percent in either direction
+undergoes a change of a specified threshold percent in either direction.
+
+The bot will monitor the price of the currency pairs every 5 seconds,
+fetching it from uphold API.
+
+Each time an alert is triggered, the bot will log it,
+and store the alert in a database.
 ```
 
 ## Project setup
