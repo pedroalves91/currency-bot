@@ -1,0 +1,19 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    environment:
+      POSTGRES_DB: 'currency'
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'r00t'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
