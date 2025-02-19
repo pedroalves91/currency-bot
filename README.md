@@ -26,7 +26,7 @@ $ npm install
 
 # set parameters in .env file
 create a .env file in the root of the project
-and set the same parameters as in the .env.example file
+and set the parameters as in the .env.example file
 ```
 
 ## Compile and run the project

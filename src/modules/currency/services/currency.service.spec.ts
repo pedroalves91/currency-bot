@@ -52,7 +52,7 @@ describe('CurrencyService spec', () => {
       };
 
       service['currencyPairs'].set('BTC-USD', currencyPair);
-      currencyHttpClientService.getBtcPrice.mockResolvedValue({
+      currencyHttpClientService.getCurrencyPrice.mockResolvedValue({
         ask: '110',
         bid: '100',
         currency: 'USD',
@@ -78,7 +78,7 @@ describe('CurrencyService spec', () => {
       };
 
       service['currencyPairs'].set('BTC-USD', currencyPair);
-      currencyHttpClientService.getBtcPrice.mockResolvedValue({
+      currencyHttpClientService.getCurrencyPrice.mockResolvedValue({
         ask: '100',
         bid: '100',
         currency: 'USD',

@@ -53,7 +53,7 @@ export class CurrencyService {
   }
 
   async checkPrice(currencyPair: CurrencyPair): Promise<void> {
-    const data = await this.currencyHttpClientService.getBtcPrice(
+    const data = await this.currencyHttpClientService.getCurrencyPrice(
       currencyPair.pair,
     );
 

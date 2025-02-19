@@ -21,7 +21,7 @@ export class CurrencyHttpClientService {
     private readonly configService: ConfigService,
   ) {}
 
-  async getBtcPrice(currencyPair: string): Promise<CurrencyResponse> {
+  async getCurrencyPrice(currencyPair: string): Promise<CurrencyResponse> {
     try {
       const response = await this.customHttpService.get<CurrencyResponse>(
         `/ticker/${currencyPair}`,

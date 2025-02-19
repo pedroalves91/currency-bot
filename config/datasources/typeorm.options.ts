@@ -8,7 +8,6 @@ export class TypeOrmOptions implements TypeOrmOptionsFactory {
   constructor(private readonly configService: ConfigService) {}
 
   createTypeOrmOptions(): TypeOrmModuleOptions {
-    //const database = props.database;
     const entities = getMetadataArgsStorage().tables.map((tbl) => tbl.target);
 
     return {
